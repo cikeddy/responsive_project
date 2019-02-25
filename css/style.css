@@ -228,7 +228,7 @@ input:focus {
 	background-color: yellow;
 }
 
-#submit-button:focus {
+input[type=submit]:focus {
 	background-color: blue;
 }
 
