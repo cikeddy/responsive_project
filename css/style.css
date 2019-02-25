@@ -1,0 +1,243 @@
+/* CSS Document */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+
+main {
+	margin-top: 350px;
+	background-color: #1E0303;
+	font-family: 'Karma', serif;
+	padding: 30px 30px 30px 0px;
+	margin-left: 40px;
+	color: white;
+	border: white;
+	text-decoration: none;
+}
+
+
+main p, h3{
+	font-size: large;
+	margin-bottom: 16px;
+}
+
+main h1 {
+	font-size: xx-large;
+	margin-bottom: 16px;
+}
+
+main h2 {
+	font-size: x-large;
+	margin-bottom: 8px;
+}
+
+main h3 {
+	font-size: large;
+}
+
+main img {
+	margin-bottom: 16px;
+}
+
+body {
+	background-color: #1E0303;
+}
+
+button {
+	background: #EC2127;
+	font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, bold;
+	text-transform: uppercase;
+	padding: 10px;
+	border-color:black;
+	border-width: 1px;
+	display: inline-block;
+	align-content: center;
+	margin: 20px 20px 20px 0px;
+}
+
+button:hover {
+	color: white;
+}
+
+body .decorative {
+	max-height: 50vh;
+	max-width: 70%;
+	display: block;
+}
+
+body .banner {	
+	max-width: 100%;
+	justify-content: center;
+	margin-bottom: 16px;
+}
+
+header img {
+	height: 50px;
+	padding: 20px;
+	margin-left: 40px;
+}
+
+
+/*header code adapted from https://codetheweb.blog/2017/12/12/style-a-navigation-bar-css/*/
+header {
+	background-color: #1E0303;
+	position: fixed;
+	height: 300px;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex; 
+	align-items: center;
+	box-shadow: 0 0 25px 0 black;
+}
+
+header li {
+	margin: 20px;
+}
+
+a {
+	color: white;
+}
+
+nav * {
+	color: #EC2127;
+	margin-top: 20px;
+	font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, bold;
+	text-decoration: none;
+}
+
+.skip-main {
+	color: #EC2127;
+	position: absolute;
+	left: -1000px;
+}
+
+.skip-main:focus {
+	left: 10px;
+	top: 300px;
+	display: inline-block;
+	transition: .5s;
+}
+
+.current {
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	color: hsla(358,84%,53%,0.67);
+}
+
+footer *{
+	display: inline-block;
+	padding: 2vh 0;
+	background-color: #1E0303;
+	color:#EC2127;
+	font-size: medium;
+	font-family:'Karma', serif;
+}
+footer {
+	padding-left: 2vh;
+	background-color: #1E0303;
+	display: flex;
+	justify-content: space-around;
+	box-shadow: 0 0 25px 0 black;
+}
+
+.gallery img {
+	height: auto;
+	max-width: 75%;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  	justify-content: center;
+}
+
+.tests-container .test h2 {
+	text-align: center;
+	text-transform: uppercase;
+	background-color: white;
+	color: black;
+	padding: 10px;
+	width: auto;
+	position:static;
+}
+
+
+.tests-container .test {
+	background-color: hsla(0,100%,0%,0.88); 
+	padding: 10px;
+	margin: 20px;
+	max-width: 75%;
+}
+
+.tests-container {
+	background-color: white;
+	background-image: url("../images/nyc_aerial.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30px;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+  	justify-content: center;
+}
+
+#team figure {
+	padding: 0 0 10px;
+}
+
+#team figure img {
+	margin-bottom: 8px;
+	max-height: 20vh;
+	max-width: inherit;
+}
+
+#team {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex; 
+	justify-content: flex-start;
+	flex-direction: column;
+	}
+
+input {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input:focus {
+	background-color: yellow;
+}
+
+#submit-button:focus {
+	background-color: blue;
+}
+
+@media (prefers-reduced-motion: reduce) {
+a.skip-main{
+   -webkit-transition-property: none;
+   -moz-transition-property: none;
+   -o-transition-property: none;
+   transition-property: none;
+  }
+}
+
