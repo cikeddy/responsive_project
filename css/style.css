@@ -219,18 +219,29 @@ footer {
 	flex-direction: column;
 	}
 
-input {
+input, textarea {
 	display: block;
 	margin-bottom: 10px;
 }
 
-input:focus {
+input:focus , textarea:focus {
 	background-color: yellow;
 }
 
-input[type=submit]:focus {
-	background-color: blue;
+input[type=submit] {
+	background-color: white;
+	color: black;
+	text-transform: uppercase;
 }
+
+
+input[type=submit]:focus {
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+}
+
+
 
 @media (prefers-reduced-motion: reduce) {
 a.skip-main{
