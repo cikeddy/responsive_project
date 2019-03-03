@@ -25,6 +25,7 @@ main {
 	color: white;
 	border: white;
 	text-decoration: none;
+	text-align: justify;
 }
 
 
@@ -35,6 +36,7 @@ main p, h3{
 
 ol, ul {
 	margin: 20px;
+	text-align:left;
 }
 
 main h1 {
@@ -49,6 +51,10 @@ main h2 {
 
 main h3 {
 	font-size: large;
+}
+
+main h1, h2, h3 {
+	text-align: center;
 }
 
 main img {
@@ -67,8 +73,7 @@ button, .button {
 	border-color:black;
 	border-width: 1px;
 	display: inline-block;
-	align-content: center;
-	margin: 20px 20px 20px 0px;
+	margin: 20px 20px 20px 45%;
 }
 
 button:hover, .button {
@@ -79,6 +84,7 @@ body .decorative {
 	max-height: 50vh;
 	max-width: 70%;
 	display: block;
+	margin: auto;
 }
 
 body .banner {	
@@ -244,6 +250,10 @@ input:focus , textarea:focus {
 	background-color: yellow;
 }
 
+input[type=submit] {
+	margin-left: 0px;
+}
+
 
 
 
@@ -252,22 +262,39 @@ label {
 }
 
 
-@media (max-width: 1199) and (orientation: landscape) {
-header {
-	height: 100px;
-	justify-content: space-between;
-	align-content: center;
-}
+@media (orientation: landscape) {
+	header {
+		height: 100px;
+		justify-content: space-between;
+		align-items:center;
+	}
 	
 	header li {
 		display: inline-block;
 	}
 	
-	main {
-		margin-top: 300px;
+	nav a:hover {
+		background-color: black;
 	}
 	
-  }
+	nav * {
+		background-color: transparent;
+	}
+	
+	main {
+		margin-top: 120px;
+	}
+	
+	.tests-container .test {
+			max-width: 33%;
+	}
+	
+	.tests-container {
+		flex-direction: row;
+		align-items: baseline;
+	}
+	
+}
 
 
 @media (min-width: 1200px) and (max-width:2000px) {
@@ -348,6 +375,17 @@ nav a:hover {
 nav * {
 	background-color: transparent;
 }
+
+main h1, h2, h3 {
+	text-align: left;
+}
+	
+body .decorative {
+	margin: 0px;
+}
+	
+button, .button {
+	margin: 0 auto;
 
 }
 
