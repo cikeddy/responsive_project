@@ -262,7 +262,7 @@ label {
 }
 
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
 	header {
 		height: 100px;
 		justify-content: space-between;
