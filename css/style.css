@@ -253,6 +253,8 @@ input:focus , textarea:focus {
 
 input[type=submit] {
 	margin-left: 0px;
+	color: black;
+	font-weight: bold;
 }
 
 
