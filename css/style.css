@@ -17,7 +17,7 @@ footer {
 
 
 main {
-	margin-top: 250px;
+	margin-top: 270px;
 	background-color: #1E0303;
 	font-family: 'Karma', serif;
 	padding: 0 30px 30px 0px;
@@ -111,8 +111,12 @@ header {
 	box-shadow: 0 0 25px 0 black;
 }
 
-header li {
-	margin: 20px;
+
+li a {
+	display: block;
+	width: 100px;
+	padding: 8px 16px;
+	margin: 0px;
 }
 
 a {
@@ -121,9 +125,10 @@ a {
 
 nav * {
 	color: #EC2127;
-	margin-top: 20px;
 	font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, bold;
 	text-decoration: none;
+	background-color: black;
+	font-weight: bold;
 }
 
 .skip-main {
@@ -144,7 +149,7 @@ nav * {
 }
 
 nav a:hover {
-	color: hsla(358,84%,53%,0.67);
+	background-color: white;
 }
 
 footer *{
@@ -269,6 +274,7 @@ main {
 }
 header li {
 	display: inline-block;
+	margin-top: 20px;
 	left: 10px;
 }
 	
@@ -323,6 +329,14 @@ header img {
 		padding: 10px;
 	}
 	
+nav a:hover {
+	color: hsla(358,84%,53%,0.67);
+	background-color: transparent;
+}
+	
+nav * {
+	background-color: transparent;
+}
 
 }
 
