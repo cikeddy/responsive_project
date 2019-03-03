@@ -74,6 +74,7 @@ button, .button {
 	border-width: 1px;
 	display: inline-block;
 	margin: 20px 20px 20px 45%;
+	min-width: 100px;
 }
 
 button:hover, .button {
@@ -261,6 +262,14 @@ label {
 	width: 20%;
 }
 
+form * {
+	min-width: 60%;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
 
 @media screen and (orientation: landscape) {
 	header {
